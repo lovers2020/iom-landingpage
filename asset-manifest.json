@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/iom-landingpage/static/css/main.2e313201.css",
+    "main.js": "/iom-landingpage/static/js/main.5b2158fa.js",
+    "static/media/sample_2.PNG": "/iom-landingpage/static/media/sample_2.03892a8d70ea5ea22f60.PNG",
+    "static/media/sample_1.PNG": "/iom-landingpage/static/media/sample_1.8c23aa5904de4927b634.PNG",
+    "static/media/Pretendard-Black.subset.woff": "/iom-landingpage/static/media/Pretendard-Black.subset.d87959822e5e862cba50.woff",
+    "static/media/Pretendard-ExtraBold.subset.woff": "/iom-landingpage/static/media/Pretendard-ExtraBold.subset.18db997881f69f9eedea.woff",
+    "static/media/Pretendard-Bold.subset.woff": "/iom-landingpage/static/media/Pretendard-Bold.subset.1c1244339e3f1de8db68.woff",
+    "static/media/Pretendard-Medium.subset.woff": "/iom-landingpage/static/media/Pretendard-Medium.subset.fffc4b41dbb45f96c33c.woff",
+    "static/media/Pretendard-Light.subset.woff": "/iom-landingpage/static/media/Pretendard-Light.subset.25a8f271b1415ab62119.woff",
+    "static/media/Pretendard-SemiBold.subset.woff": "/iom-landingpage/static/media/Pretendard-SemiBold.subset.5aa64cd97d351fe35353.woff",
+    "static/media/Pretendard-Regular.subset.woff": "/iom-landingpage/static/media/Pretendard-Regular.subset.955bceee0409b8095d96.woff",
+    "static/media/Pretendard-ExtraLight.subset.woff": "/iom-landingpage/static/media/Pretendard-ExtraLight.subset.e6238fdf99e7a886933a.woff",
+    "static/media/Pretendard-Thin.subset.woff": "/iom-landingpage/static/media/Pretendard-Thin.subset.91d35c56e106722f58ec.woff",
+    "static/media/Pretendard-Black.subset.woff2": "/iom-landingpage/static/media/Pretendard-Black.subset.caa29603c364423e73de.woff2",
+    "static/media/Pretendard-ExtraBold.subset.woff2": "/iom-landingpage/static/media/Pretendard-ExtraBold.subset.ef8691b3175c491831c9.woff2",
+    "static/media/Pretendard-Bold.subset.woff2": "/iom-landingpage/static/media/Pretendard-Bold.subset.a5ccc8f78b68ba6de99a.woff2",
+    "static/media/Pretendard-SemiBold.subset.woff2": "/iom-landingpage/static/media/Pretendard-SemiBold.subset.c50116c0682fbf0defde.woff2",
+    "static/media/Pretendard-Medium.subset.woff2": "/iom-landingpage/static/media/Pretendard-Medium.subset.f9eb757e995004861d66.woff2",
+    "static/media/Pretendard-Light.subset.woff2": "/iom-landingpage/static/media/Pretendard-Light.subset.30ed3bc57424fa8d166f.woff2",
+    "static/media/Pretendard-Regular.subset.woff2": "/iom-landingpage/static/media/Pretendard-Regular.subset.e0a855e501f761b58aa8.woff2",
+    "static/media/Pretendard-ExtraLight.subset.woff2": "/iom-landingpage/static/media/Pretendard-ExtraLight.subset.efbe2ffcea89d7a5bcf6.woff2",
+    "static/media/Pretendard-Thin.subset.woff2": "/iom-landingpage/static/media/Pretendard-Thin.subset.24952e0aab525b73031b.woff2",
+    "static/media/banner.jpg": "/iom-landingpage/static/media/banner.efd403ed0d3988becc9a.jpg",
+    "static/media/peoples.png": "/iom-landingpage/static/media/peoples.71368ded18e9243e1297.png",
+    "index.html": "/iom-landingpage/index.html",
+    "main.2e313201.css.map": "/iom-landingpage/static/css/main.2e313201.css.map",
+    "main.5b2158fa.js.map": "/iom-landingpage/static/js/main.5b2158fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e313201.css",
+    "static/js/main.5b2158fa.js"
+  ]
+}
