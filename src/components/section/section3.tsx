@@ -1,50 +1,12 @@
-import { Box, VStack, Text, HStack, Image, Fade } from "@chakra-ui/react";
-import {
-    AnimatePresence,
-    motion,
-    useMotionValueEvent,
-    useScroll,
-} from "framer-motion";
-import { useState } from "react";
-import color from "../../images/color.jpg";
-
-const textVariants = {
-    initial: { opacity: 0, scale: 0 },
-    visible: {
-        opacity: 1,
-        scale: 1.0,
-        transition: {
-            duration: 1.1,
-        },
-    },
-    exit: {
-        opacity: 1,
-        scale: 1,
-    },
-};
+import { Box, VStack, Text, Image } from "@chakra-ui/react";
+import peoples from "../../images/peoples.png";
+import CTAButton from "../CTAButton";
 
 export default function Section3() {
-    const { scrollY } = useScroll();
-    const [showText, setShowText] = useState(false);
-    const [showPic, setShowPic] = useState(false);
-    useMotionValueEvent(scrollY, "change", (y) => {
-        if (y > 40) {
-            setShowText(true);
-        } else if (y < 30) {
-            setShowText(false);
-        }
-    });
-    useMotionValueEvent(scrollY, "change", (y) => {
-        if (y > 180) {
-            setShowPic(true);
-        } else if (y < 170) {
-            setShowPic(false);
-        }
-    });
     return (
         <>
             <section
-                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#6DE0C5" }}
+                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#5fd4b9" }}
             >
                 <VStack>
                     <Box
@@ -52,69 +14,46 @@ export default function Section3() {
                         textAlign={"center"}
                         color={"black"}
                     >
-                        <h1 style={{ fontSize: "22px", fontWeight: "700" }}>
-                            <strong>웹사이트가 필요하셔서 들어오셨겠죠?</strong>
+                        <h1 style={{ fontSize: "18px", fontWeight: "700" }}>
+                            <strong>
+                                인터넷 공간이지만<br></br> 의뢰를 맡기는
+                                사람들이 어떤 사람들인지
+                            </strong>
+                            <br></br>투명하게 보여드려야 된다는 생각이 있습니다.
                         </h1>
-                        <Text>
-                            소통이 잘 되지않아 결과물이<br></br> 마음에 들지
-                            않으셨던 적이 있으셨죠!
-                        </Text>
+                        <Text></Text>
                     </Box>
-                    <AnimatePresence initial={false}>
-                        {showText ? (
-                            <Box
-                                as={motion.div}
-                                key="text1"
-                                variants={textVariants}
-                                initial="initial"
-                                animate="visible"
-                                exit="exit"
-                                my={4}
-                                color={"black"}
-                                fontWeight={"600"}
-                                fontSize={"24px"}
-                            >
-                                <Text>저희와 함께 해보시지 않으실래요?</Text>
-                            </Box>
-                        ) : null}
-                    </AnimatePresence>
-                    <VStack mt={8}>
-                        <Fade
-                            in={showPic}
-                            transition={{ enter: { duration: 2.2 } }}
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                flexDirection: "column",
-                                gap: "10px",
-                            }}
-                        >
-                            <Image w={"80%"} src={color} />
-                        </Fade>
-
-                        <Text color={"gray.500"} fontSize={"14px"}>
-                            Instead of me의 작업물입니다.
+                    <VStack textAlign={"center"} color={"gray.700"}>
+                        <Image w={"50%"} src={peoples} />
+                        <Text fontSize={"18px"} fontWeight={"500"}>
+                            저희는 삼성전자 출신으로<br></br> 총 3명으로 구성
+                            되어있습니다.
                         </Text>
-                        <Box
-                            mt={6}
-                            color={"black"}
-                            fontWeight={"500"}
-                            textAlign={"center"}
-                        >
-                            <Text>일부 책임감 없는 제작 업체들과 다르게</Text>
-                            <Text>
-                                제작 이후{" "}
-                                <strong style={{ fontWeight: "700" }}>
-                                    사후관리까지
-                                </strong>{" "}
-                                확실하게 책임지겠습니다.
-                            </Text>
-                            <Text>매일 진행상황 공유는 물론이며,</Text>
-                            <Text>
-                                연락주시면 10분내로 꼭 답변드리겠습니다.
-                            </Text>
-                        </Box>
+                        <Text fontSize={"15px"}>
+                            개발자, QA, 엔지니어 업무를 8년이상 담당하였습니다.
+                        </Text>
+                        <Text>
+                            이 페이지를 제작한 저는 QA 업무를 담당했었지만
+                            <br></br> 지금은 개발자로 일하고 있습니다.
+                        </Text>
+                        <Text mt={1} fontSize={"20px"} fontWeight={"500"}>
+                            회사에서 일하는 동안 <br></br>미친듯이{" "}
+                            <strong style={{ fontWeight: "600" }}>
+                                고객 만족
+                            </strong>
+                            을 위해 노력했습니다.
+                        </Text>
+                        <Text>
+                            그 결과 고객님들이 어떤 것을 원하는 지 알게 되었고
+                            <br></br>항상 고객님들의 입장에서 바라보게
+                            되었습니다.
+                        </Text>
+                        <Text mb={4} fontSize={"18px"} fontWeight={"700"}>
+                            프로젝트 시작 전 저희가 작성한 기획안을<br></br>
+                            고객님과 직접 하나 하나 확인하며<br></br>
+                            꼼꼼하게 제작해드리겠습니다!
+                        </Text>
+                        <CTAButton color="#A43D96" />
                     </VStack>
                 </VStack>
             </section>

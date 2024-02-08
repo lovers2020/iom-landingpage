@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 const GlobalStyle = createGlobalStyle`
     ${reset}
     body {
-        background-color: #0087C7; 
+        background-color: #007ec7; 
         color:white;
         font-family: "Pretendard",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         box-sizing: border-box; 

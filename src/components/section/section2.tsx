@@ -88,11 +88,19 @@ export default function Section2() {
                                 justifyContent: "center",
                                 alignItems: "center",
                                 flexDirection: "column",
-                                gap: "10px",
+                                gap: "15px",
                             }}
                         >
-                            <Image w={"80%"} src={sample_1} />
-                            <Image w={"80%"} src={sample_2} />
+                            <Image
+                                w={"80%"}
+                                boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
+                                src={sample_1}
+                            />
+                            <Image
+                                boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
+                                w={"80%"}
+                                src={sample_2}
+                            />
                         </Fade>
 
                         <Text color={"gray.500"} fontSize={"14px"}>
@@ -103,6 +111,7 @@ export default function Section2() {
                             color={"black"}
                             fontWeight={"500"}
                             textAlign={"center"}
+                            fontSize={"17px"}
                         >
                             <Text>일부 책임감 없는 제작 업체들과 다르게</Text>
                             <Text>
