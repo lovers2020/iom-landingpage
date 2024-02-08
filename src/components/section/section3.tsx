@@ -6,7 +6,7 @@ export default function Section3() {
     return (
         <>
             <section
-                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#5fd4b9" }}
+                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#96EFFF" }}
             >
                 <VStack>
                     <Box

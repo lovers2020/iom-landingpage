@@ -44,14 +44,19 @@ export default function Section2() {
     return (
         <>
             <section
-                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#EAE9D3" }}
+                style={{
+                    padding: "3rem 0 3rem 0",
+                    backgroundColor: "#5FBDFF",
+                    background:
+                        "linear-gradient(to bottom, #5FBDFF 50%, #96EFFF 100%)",
+                }}
             >
                 {/* #F8F8F8 */}
                 <VStack>
                     <Box
                         fontWeight={"400"}
                         textAlign={"center"}
-                        color={"black"}
+                        color={"gray.100"}
                     >
                         <h1 style={{ fontSize: "22px", fontWeight: "700" }}>
                             <strong>웹사이트가 필요하셔서 들어오셨겠죠?</strong>

@@ -5,7 +5,13 @@ import CTAButton from "../CTAButton";
 export default function Section1() {
     return (
         <>
-            <section style={{ paddingTop: "1rem" }}>
+            <section
+                style={{
+                    paddingTop: "1rem",
+                    background:
+                        "linear-gradient(to bottom, #7B66FF, #5FBDFF 100%)",
+                }}
+            >
                 <VStack>
                     <Box
                         fontWeight={"500"}
@@ -21,7 +27,7 @@ export default function Section1() {
                         <Text textAlign={"center"}>대기업 출신 개발자들이</Text>
                         <Text>책임지고 개발해드려요</Text>
                     </Box>
-                    <CTAButton color="#0087C7" />
+                    <CTAButton color="#7B66FF" />
 
                     <Image
                         mt={12}

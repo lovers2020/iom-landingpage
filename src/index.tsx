@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 const GlobalStyle = createGlobalStyle`
     ${reset}
     body {
-        background-color: #007ec7; 
+        background-color: #7B66FF; 
         color:white;
         font-family: "Pretendard",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         box-sizing: border-box; 
@@ -30,10 +30,8 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 root.render(
-    <React.StrictMode>
-        <ChakraProvider>
-            <GlobalStyle />
-            <App />
-        </ChakraProvider>
-    </React.StrictMode>
+    <ChakraProvider>
+        <GlobalStyle />
+        <App />
+    </ChakraProvider>
 );

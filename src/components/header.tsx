@@ -1,4 +1,4 @@
-import { Center, Image, Text } from "@chakra-ui/react";
+import { Center, Text } from "@chakra-ui/react";
 import { goToTop, refresh } from "../utils";
 
 export default function Header() {
