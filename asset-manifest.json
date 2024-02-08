@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/iom-landingpage/static/css/main.2e313201.css",
-    "main.js": "/iom-landingpage/static/js/main.1887c982.js",
+    "main.js": "/iom-landingpage/static/js/main.d5e7ed39.js",
     "static/media/sample_2.PNG": "/iom-landingpage/static/media/sample_2.03892a8d70ea5ea22f60.PNG",
     "static/media/sample_1.PNG": "/iom-landingpage/static/media/sample_1.8c23aa5904de4927b634.PNG",
     "static/media/Pretendard-Black.subset.woff": "/iom-landingpage/static/media/Pretendard-Black.subset.d87959822e5e862cba50.woff",
@@ -26,10 +26,10 @@
     "static/media/peoples.png": "/iom-landingpage/static/media/peoples.71368ded18e9243e1297.png",
     "index.html": "/iom-landingpage/index.html",
     "main.2e313201.css.map": "/iom-landingpage/static/css/main.2e313201.css.map",
-    "main.1887c982.js.map": "/iom-landingpage/static/js/main.1887c982.js.map"
+    "main.d5e7ed39.js.map": "/iom-landingpage/static/js/main.d5e7ed39.js.map"
   },
   "entrypoints": [
     "static/css/main.2e313201.css",
-    "static/js/main.1887c982.js"
+    "static/js/main.d5e7ed39.js"
   ]
 }
