@@ -3,7 +3,7 @@ import { Box, Grid } from "@chakra-ui/react";
 export default function Home() {
     return (
         <>
-            <Box px={80} py={80} bgColor={"whitesmoke"} h="100vh">
+            <Box px={40} py={80} h="100vh">
                 <Grid
                     columnGap={10}
                     templateColumns={{
