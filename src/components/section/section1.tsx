@@ -12,13 +12,13 @@ export default function Section1() {
                         textAlign={"center"}
                     >
                         <Heading>
-                            <b>웹사이트 제작</b>
+                            <strong>웹사이트 제작</strong>
                         </Heading>
-                        <Text>끝까지 책임져드립니다.</Text>
+                        <Text>끝까지 책임져드릴게요</Text>
                     </Box>
-                    <Box my={4} color={"gray.200"}>
+                    <Box my={4} color={"gray.300"}>
                         <Text textAlign={"center"}>대기업 출신 개발자들이</Text>
-                        <Text>책임지고 개발해드립니다.</Text>
+                        <Text>책임지고 개발해드려요</Text>
                     </Box>
 
                     <a href="http://pf.kakao.com/_sXxoPG/chat">
@@ -27,7 +27,6 @@ export default function Section1() {
                             color={"#2C71FC"}
                             py={2}
                             px={5}
-                            mb={12}
                             fontWeight={"600"}
                             borderRadius={3}
                         >
@@ -36,6 +35,7 @@ export default function Section1() {
                     </a>
 
                     <Image
+                        mt={12}
                         w={"80%"}
                         src={banner}
                         boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}

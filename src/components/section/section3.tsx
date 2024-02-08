@@ -6,8 +6,8 @@ import {
     useScroll,
 } from "framer-motion";
 import { useState } from "react";
-import sample_1 from "../../images/sample_1.PNG";
-import sample_2 from "../../images/sample_2.PNG";
+import color from "../../images/color.jpg";
+
 const textVariants = {
     initial: { opacity: 0, scale: 0 },
     visible: {
@@ -23,7 +23,7 @@ const textVariants = {
     },
 };
 
-export default function Section2() {
+export default function Section3() {
     const { scrollY } = useScroll();
     const [showText, setShowText] = useState(false);
     const [showPic, setShowPic] = useState(false);
@@ -44,9 +44,8 @@ export default function Section2() {
     return (
         <>
             <section
-                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#EAE9D3" }}
+                style={{ padding: "3rem 0 3rem 0", backgroundColor: "#6DE0C5" }}
             >
-                {/* #F8F8F8 */}
                 <VStack>
                     <Box
                         fontWeight={"400"}
@@ -91,8 +90,7 @@ export default function Section2() {
                                 gap: "10px",
                             }}
                         >
-                            <Image w={"80%"} src={sample_1} />
-                            <Image w={"80%"} src={sample_2} />
+                            <Image w={"80%"} src={color} />
                         </Fade>
 
                         <Text color={"gray.500"} fontSize={"14px"}>
