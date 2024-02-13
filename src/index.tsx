@@ -5,6 +5,8 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./styles/fonts/pretendard-subset.css";
+import { HelmetProvider } from "react-helmet-async";
+import { RecoilRoot } from "recoil";
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
@@ -12,7 +14,7 @@ const root = ReactDOM.createRoot(
 const GlobalStyle = createGlobalStyle`
     ${reset}
     body {
-        background-color: #7B66FF; 
+        background-color: white; 
         color:white;
         font-family: "Pretendard",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         box-sizing: border-box; 
@@ -30,8 +32,12 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 root.render(
-    <ChakraProvider>
-        <GlobalStyle />
-        <App />
-    </ChakraProvider>
+    <RecoilRoot>
+        <ChakraProvider>
+            <HelmetProvider>
+                <GlobalStyle />
+                <App />
+            </HelmetProvider>
+        </ChakraProvider>
+    </RecoilRoot>
 );

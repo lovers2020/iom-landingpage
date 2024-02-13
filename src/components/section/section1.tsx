@@ -8,6 +8,7 @@ export default function Section1() {
             <section
                 style={{
                     paddingTop: "1rem",
+                    backgroundColor: "#7B66FF",
                     background:
                         "linear-gradient(to bottom, #7B66FF, #5FBDFF 100%)",
                 }}
@@ -34,6 +35,7 @@ export default function Section1() {
                         w={"80%"}
                         src={banner}
                         boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
+                        alt="banner"
                     />
                 </VStack>
             </section>

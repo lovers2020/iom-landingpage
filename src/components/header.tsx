@@ -8,7 +8,7 @@ export default function Header() {
     }
     return (
         <header>
-            <Center>
+            <Center backgroundColor={"#7B66FF"}>
                 <Text
                     fontSize={"24px"}
                     letterSpacing={1}
