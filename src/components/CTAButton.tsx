@@ -1,15 +1,16 @@
 import { Text, Box } from "@chakra-ui/react";
 interface fontColor {
     color: string;
+    bgcolor: string;
 }
-export default function CTAButton({ color }: fontColor) {
+export default function CTAButton({ color, bgcolor }: fontColor) {
     return (
         <a href="http://pf.kakao.com/_sXxoPG/chat" target="blank">
             <Box
-                bgColor={"white"}
+                bgColor={bgcolor}
                 color={color}
                 py={2}
-                px={10}
+                px={[10, 20]}
                 fontWeight={"700"}
                 borderRadius={3}
             >
