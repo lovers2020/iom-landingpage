@@ -1,5 +1,4 @@
-import { Box, VStack, Text, Heading, AspectRatio } from "@chakra-ui/react";
-import bannerVideo from "../../images/banner_animation.mp4";
+import { Box, VStack, Text, Heading } from "@chakra-ui/react";
 import CTAButton from "../CTAButton";
 
 export default function Section1Web() {
@@ -29,22 +28,7 @@ export default function Section1Web() {
                             대기업 출신 개발자들이 책임지고 개발해드려요.
                         </Text>
                     </Box>
-                    <CTAButton color="#7B66FF" bgcolor="white" />
-
-                    <AspectRatio
-                        mt={12}
-                        w={"40%"}
-                        boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
-                    >
-                        <video
-                            title="banner"
-                            src={bannerVideo}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                        ></video>
-                    </AspectRatio>
+                    <CTAButton />
                 </VStack>
             </section>
         </>

@@ -20,8 +20,8 @@ const router = createBrowserRouter(
                 },
             ],
         },
-    ]
-    // { basename: "/iom-landingpage" }
+    ],
+    { basename: "/iom-landingpage" }
 );
 function App() {
     const setDisplayResolution = useSetRecoilState(displayResolution);

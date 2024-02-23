@@ -53,7 +53,7 @@ export default function Section3Web() {
                             고객님과 직접 하나 하나 확인하며<br></br>
                             꼼꼼하게 제작해드리겠습니다!
                         </Text>
-                        <CTAButton color="white" bgcolor="purple.600" />
+                        <CTAButton />
                     </VStack>
                 </VStack>
             </section>

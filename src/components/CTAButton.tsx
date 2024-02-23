@@ -1,21 +1,23 @@
-import { Text, Box } from "@chakra-ui/react";
-interface fontColor {
-    color: string;
-    bgcolor: string;
-}
-export default function CTAButton({ color, bgcolor }: fontColor) {
+import { FaArrowRight } from "react-icons/fa";
+import { Text, Box, HStack } from "@chakra-ui/react";
+
+export default function CTAButton() {
     return (
         <a href="http://pf.kakao.com/_sXxoPG/chat" target="blank">
-            <Box
-                bgColor={bgcolor}
-                color={color}
-                py={2}
-                px={[10, 20]}
-                fontWeight={"700"}
-                borderRadius={3}
+            <HStack
+                bgColor={"#242428"}
+                color={"white"}
+                py={3}
+                px={[4, 10]}
+                borderRadius={10}
+                mt={4}
+                fontSize={"16px"}
+                fontWeight={600}
+                letterSpacing={0.2}
             >
-                <Text>문의하기</Text>
-            </Box>
+                <span>무료로 상담받기</span>
+                <FaArrowRight />
+            </HStack>
         </a>
     );
 }

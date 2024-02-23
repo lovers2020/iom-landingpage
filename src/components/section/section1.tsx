@@ -1,56 +1,82 @@
-import { Box, VStack, Text, Heading, AspectRatio } from "@chakra-ui/react";
-import bannerVideo from "../../images/banner_animation.mp4";
+import { Box, VStack, Text, Image } from "@chakra-ui/react";
 import CTAButton from "../CTAButton";
+import chatImage from "../../images/chat_talk.png";
 
 export default function Section1() {
     return (
         <>
             <section
                 style={{
-                    paddingTop: "1rem",
-                    backgroundColor: "#7B66FF",
-                    background:
-                        "linear-gradient(to bottom, #7B66FF, #5FBDFF 100%)",
+                    padding: "2rem 0",
+                    backgroundColor: "#FFF7E4",
                 }}
             >
                 <VStack>
                     <Box
+                        color={"#000000D9"}
                         fontWeight={"500"}
-                        fontSize="22px"
                         textAlign={"center"}
                     >
-                        <Heading fontSize={"48px"}>
-                            <strong>웹사이트 제작</strong>
-                        </Heading>
-                        <Text>끝까지 책임져드릴게요</Text>
+                        <Text
+                            letterSpacing={-1}
+                            lineHeight={"1.3"}
+                            fontSize={"2.5rem"}
+                            fontWeight={"700"}
+                        >
+                            <strong>
+                                웹사이트<br></br>다 만들어드립니다
+                            </strong>
+                        </Text>
                     </Box>
-                    <Box my={4} color={"gray.300"}>
-                        <Text textAlign={"center"}>대기업 출신 개발자들이</Text>
-                        <Text>책임지고 개발해드려요</Text>
-                    </Box>
-                    <CTAButton color="#7B66FF" bgcolor="white" />
-
-                    {/* <Image
-                        mt={12}
-                        w={"80%"}
-                        src={banner}
-                        boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
-                        alt="banner"
-                    /> */}
-                    <AspectRatio
-                        mt={12}
-                        w={"80%"}
-                        boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
+                    <Box
+                        color={"rgba(0,0,0,0.6)"}
+                        opacity={0.8}
+                        fontWeight={"700"}
+                        letterSpacing={-0.4}
+                        fontSize={"1rem"}
+                        mt={2}
                     >
-                        <video
-                            title="banner"
-                            src={bannerVideo}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                        ></video>
-                    </AspectRatio>
+                        <Text>웹사이트 맞춤 제작 저희와 함께 준비하세요.</Text>
+                    </Box>
+                    <CTAButton />
+                    <Box
+                        position={"relative"}
+                        letterSpacing={-0.1}
+                        fontSize={"12px"}
+                    >
+                        <Text
+                            color={"black"}
+                            bgColor={"white"}
+                            display={"inline-block"}
+                            px={4}
+                            py={1.5}
+                            borderRadius={7}
+                            position={"absolute"}
+                            left={10}
+                            top={14}
+                        >
+                            견적 문의드립니다~
+                        </Text>
+                        <Image
+                            m={"10px auto"}
+                            w={"80%"}
+                            src={chatImage}
+                            alt="chat"
+                        />
+                        <Text
+                            bgColor={"#3991F2"}
+                            display={"inline-block"}
+                            px={4}
+                            py={1.5}
+                            borderRadius={7}
+                            position={"absolute"}
+                            right={4}
+                            bottom={4}
+                            textAlign={"center"}
+                        >
+                            네 고객님 어떤 홈페이지를<br></br> 원하시나요?
+                        </Text>
+                    </Box>
                 </VStack>
             </section>
         </>

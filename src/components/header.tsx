@@ -1,4 +1,4 @@
-import { Center, Text } from "@chakra-ui/react";
+import { Box, HStack, Text } from "@chakra-ui/react";
 import { goToTop, refresh } from "../utils";
 
 export default function Header() {
@@ -8,17 +8,25 @@ export default function Header() {
     }
     return (
         <header>
-            <Center backgroundColor={"#7B66FF"}>
+            <HStack backgroundColor={"#FFF7E4"} p={6} justify={"space-between"}>
                 <Text
-                    fontSize={"24px"}
-                    letterSpacing={1}
-                    my={8}
+                    fontSize={"18px"}
+                    letterSpacing={0}
                     onClick={onLogoClick}
-                    fontWeight="600"
+                    fontWeight="700"
+                    color={"black"}
                 >
-                    Instead of me
+                    Instead Of Me
                 </Text>
-            </Center>
+                <HStack fontSize={"14px"} fontWeight={600}>
+                    <Box bgColor={"#242428"} py={1} px={3} borderRadius={7}>
+                        <Text>문의하기</Text>
+                    </Box>
+                    <Box bgColor={"#242428"} py={1} px={3} borderRadius={7}>
+                        <Text>포트폴리오</Text>
+                    </Box>
+                </HStack>
+            </HStack>
         </header>
     );
 }
