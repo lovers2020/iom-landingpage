@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import { HStack } from "@chakra-ui/react";
 
-export default function CTAButton() {
+export default function CTAButtonWeb() {
     return (
         <a
             href="http://pf.kakao.com/_sXxoPG/chat"
@@ -9,12 +9,13 @@ export default function CTAButton() {
             style={{ cursor: "pointer" }}
         >
             <HStack
+                w={"200px"}
                 bgColor={"#242428"}
                 color={"white"}
-                py={3}
-                px={4}
+                py={4}
+                px={5}
                 borderRadius={15}
-                fontSize={"16px"}
+                fontSize={"20px"}
                 fontWeight={600}
                 letterSpacing={0.2}
             >

@@ -1,25 +1,33 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
 import { goToTop, refresh } from "../utils";
+import { Link } from "react-router-dom";
 
 interface IbgColor {
     bgColor: boolean;
 }
 
-export default function Header({ bgColor }: IbgColor) {
+export default function HeaderWeb({ bgColor }: IbgColor) {
     function onLogoClick() {
         goToTop();
         refresh();
     }
     return (
         <nav
-            style={{ position: "fixed", top: "0", zIndex: "1", width: "100%" }}
+            style={{
+                position: "fixed",
+                top: "0",
+                zIndex: "1",
+                width: "100%",
+                backgroundColor: bgColor ? "#FFFFFB" : "#FFF7E4",
+                borderBottom: bgColor ? "1px solid rgba(0,0,0,0.2)" : "none",
+                transition: "0.5s",
+            }}
         >
             <HStack
+                maxWidth={"1280px"}
+                m={"auto"}
                 w={"100%"}
-                backgroundColor={bgColor ? "#FFFFFB" : "#FFF7E4"}
-                transition="0.5s"
-                borderBottom={bgColor ? "1px solid rgba(0,0,0,0.2)" : "none"}
-                p={5}
+                p={"16px 100px"}
                 justify={"space-between"}
             >
                 <Text
@@ -40,8 +48,8 @@ export default function Header({ bgColor }: IbgColor) {
                         >
                             <Text
                                 bgColor={"#242428"}
-                                py={1}
-                                px={3}
+                                py={2}
+                                px={4}
                                 borderRadius={10}
                             >
                                 문의하기
@@ -61,7 +69,7 @@ export default function Header({ bgColor }: IbgColor) {
                             target="blank"
                             style={{ cursor: "pointer" }}
                         >
-                            <Text color={"rgba(0,0,0,0.6)"} py={1} px={3}>
+                            <Text color={"rgba(0,0,0,0.6)"} py={2} px={4}>
                                 포트폴리오
                             </Text>
                         </a>

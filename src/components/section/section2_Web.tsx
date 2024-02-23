@@ -1,138 +1,98 @@
-import { Box, VStack, Text, HStack, Image, Fade } from "@chakra-ui/react";
-import {
-    AnimatePresence,
-    motion,
-    useMotionValueEvent,
-    useScroll,
-} from "framer-motion";
-import { useState } from "react";
-import sample_1 from "../../images/sample_1.PNG";
-import sample_2 from "../../images/sample_2.PNG";
-const textVariants = {
-    initial: { opacity: 0, scale: 0 },
-    visible: {
-        opacity: 1,
-        scale: 1.5,
-        transition: {
-            duration: 0.8,
-        },
-    },
-    exit: {
-        opacity: 1,
-        scale: 1,
-    },
-};
+import { Box, VStack, Text, Image, Center } from "@chakra-ui/react";
+import section2Img from "../../images/section2.png";
 
 export default function Section2Web() {
-    const { scrollY } = useScroll();
-    const [showText, setShowText] = useState(false);
-    const [showPic, setShowPic] = useState(false);
-    useMotionValueEvent(scrollY, "change", (y) => {
-        if (y > 60) {
-            setShowText(true);
-        } else if (y < 50) {
-            setShowText(false);
-        }
-    });
-    useMotionValueEvent(scrollY, "change", (y) => {
-        if (y > 250) {
-            setShowPic(true);
-        } else if (y < 240) {
-            setShowPic(false);
-        }
-    });
     return (
         <>
             <section
                 style={{
-                    padding: "3rem 0 3rem 0",
-                    backgroundColor: "#5FBDFF",
-                    background:
-                        "linear-gradient(to bottom, #5FBDFF 50%, #96EFFF 100%)",
+                    padding: "8rem 0 9rem 0",
+                    backgroundColor: "#0B213F",
                 }}
             >
-                {/* #F8F8F8 */}
-                <VStack>
-                    <Box
-                        fontWeight={"400"}
-                        textAlign={"center"}
-                        color={"black"}
+                <Center gap={40}>
+                    <Center
+                        position={"relative"}
+                        letterSpacing={-0.1}
+                        fontSize={"12px"}
                     >
-                        <h1 style={{ fontSize: "22px", fontWeight: "700" }}>
-                            <strong>웹사이트가 필요하셔서 들어오셨겠죠?</strong>
-                        </h1>
-                        <Text>
-                            소통이 잘 되지않아 결과물이<br></br> 마음에 들지
-                            않으셨던 적이 있으셨죠!
+                        <Text
+                            fontSize={"1.2rem"}
+                            color={"black"}
+                            bgColor={"#6EC8FB"}
+                            px={4}
+                            py={1.5}
+                            borderRadius={10}
+                            position={"absolute"}
+                            left={6}
+                            top={-6}
+                        >
+                            현재 진행상황이 어떻게 될까요?
                         </Text>
-                    </Box>
-                    <AnimatePresence initial={false}>
-                        {showText ? (
-                            <Box
-                                as={motion.div}
-                                key="text1"
-                                variants={textVariants}
-                                initial="initial"
-                                animate="visible"
-                                exit="exit"
-                                my={4}
-                                color={"black"}
-                                fontWeight={"600"}
-                                fontSize={"24px"}
-                            >
-                                <Text>저희와 함께 해보시지 않으실래요?</Text>
-                            </Box>
-                        ) : null}
-                    </AnimatePresence>
-                    <VStack mt={8}>
-                        <Fade
-                            in={showPic}
-                            transition={{ enter: { duration: 2.2 } }}
+                        <Text
+                            fontSize={"1.2rem"}
+                            color={"black"}
+                            bgColor={"#6EC8FB"}
+                            px={4}
+                            py={1.5}
+                            borderRadius={10}
+                            position={"absolute"}
+                            left={6}
+                            top={9}
+                        >
+                            일정 내에 가능하시겠죠?..
+                        </Text>
+                        <Image src={section2Img} alt="chat" />
+                        <Text
+                            fontSize={"1.2rem"}
+                            color={"black"}
+                            bgColor={"#6EC8FB"}
+                            px={4}
+                            py={1.5}
+                            borderRadius={10}
+                            position={"absolute"}
+                            right={4}
+                            bottom={4}
+                        >
+                            빠른 답변 부탁드려요.{"😤"}
+                        </Text>
+                    </Center>
+
+                    <VStack color={"#abdcff"} justify={"flex-start"}>
+                        <h1
                             style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                flexDirection: "column",
-                                gap: "15px",
+                                letterSpacing: "-0.5",
+                                fontSize: "42px",
+                                fontWeight: "600",
                             }}
                         >
-                            <Image
-                                w={"80%"}
-                                boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
-                                src={sample_1}
-                            />
-                            <Image
-                                boxShadow={"0 6px 15px 0px rgba(0,0,0,0.5)"}
-                                w={"80%"}
-                                src={sample_2}
-                            />
-                        </Fade>
-
-                        <Text color={"gray.500"} fontSize={"14px"}>
-                            Instead of me의 작업물입니다.
-                        </Text>
+                            의사소통, 정말 중요합니다
+                        </h1>
                         <Box
-                            mt={6}
-                            color={"black"}
-                            fontWeight={"500"}
-                            textAlign={"center"}
-                            fontSize={"17px"}
+                            w={"100%"}
+                            opacity={0.7}
+                            mt={2}
+                            fontSize={"18px"}
+                            letterSpacing={0}
                         >
-                            <Text>일부 책임감 없는 제작 업체들과 다르게</Text>
                             <Text>
-                                제작 이후{" "}
-                                <strong style={{ fontWeight: "700" }}>
-                                    사후관리까지
-                                </strong>{" "}
-                                확실하게 책임지겠습니다.
+                                일부 책임감 없는 제작 업체들과 다르게<br></br>{" "}
+                                제작 이후 사후관리까지 확실하게 책임지겠습니다.
                             </Text>
-                            <Text>매일 진행상황 공유는 물론이며,</Text>
-                            <Text>
-                                연락주시면 10분내로 꼭 답변드리겠습니다.
+                            <Text mt={2}>
+                                매일 진행상황 공유는 물론이며,<br></br> 연락
+                                주시면 10분 내로 꼭 답변드리겠습니다.
+                            </Text>
+                            <Text mt={2}>
+                                고객님과의 소통을 통해 더 나은 서비스를<br></br>
+                                제공하고자 끊임없이 노력합니다.
+                            </Text>
+                            <Text mt={2}>
+                                의견이나 질문이 있으시면 언제든지 말씀해주세요!
                             </Text>
                         </Box>
                     </VStack>
-                </VStack>
+                </Center>
             </section>
         </>
     );

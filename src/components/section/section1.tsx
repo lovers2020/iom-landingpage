@@ -7,7 +7,7 @@ export default function Section1() {
         <>
             <section
                 style={{
-                    padding: "2rem 0",
+                    padding: "6rem 0 3rem 0",
                     backgroundColor: "#FFF7E4",
                 }}
             >
@@ -27,22 +27,24 @@ export default function Section1() {
                                 웹사이트<br></br>다 만들어드립니다
                             </strong>
                         </Text>
-                    </Box>
-                    <Box
-                        color={"rgba(0,0,0,0.6)"}
-                        opacity={0.8}
-                        fontWeight={"700"}
-                        letterSpacing={-0.4}
-                        fontSize={"1rem"}
-                        mt={2}
-                    >
-                        <Text>웹사이트 맞춤 제작 저희와 함께 준비하세요.</Text>
+
+                        <Text
+                            color={"rgba(0,0,0,0.6)"}
+                            opacity={0.8}
+                            fontWeight={"700"}
+                            letterSpacing={-0.4}
+                            fontSize={"1rem"}
+                            my={4}
+                        >
+                            웹사이트 맞춤 제작 저희와 함께 준비하세요.
+                        </Text>
                     </Box>
                     <CTAButton />
                     <Box
                         position={"relative"}
                         letterSpacing={-0.1}
                         fontSize={"12px"}
+                        fontWeight={600}
                     >
                         <Text
                             color={"black"}

@@ -9,7 +9,6 @@ import Section3Web from "./components/section/section3_Web";
 
 export default function Home() {
     const resolution = useRecoilValue(displayResolution);
-    console.log(resolution);
     return (
         <>
             {resolution === "mobile" ? (
