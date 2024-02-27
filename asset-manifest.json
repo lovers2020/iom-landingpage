@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/iom-landingpage/static/css/main.2e313201.css",
-    "main.js": "/iom-landingpage/static/js/main.737dbe33.js",
-    "static/media/sample_2.PNG": "/iom-landingpage/static/media/sample_2.03892a8d70ea5ea22f60.PNG",
-    "static/media/sample_1.PNG": "/iom-landingpage/static/media/sample_1.8c23aa5904de4927b634.PNG",
-    "static/media/banner_animation.mp4": "/iom-landingpage/static/media/banner_animation.f4ec3ab5d70e942388ae.mp4",
+    "main.js": "/iom-landingpage/static/js/main.4c4e6303.js",
+    "static/media/section3.png": "/iom-landingpage/static/media/section3.cea2563dbf61506b55b3.png",
+    "static/media/flower.png": "/iom-landingpage/static/media/flower.45c27e2fbc2e0e2200d9.png",
+    "static/media/glamping.png": "/iom-landingpage/static/media/glamping.eb0da3f000750ad67936.png",
+    "static/media/coffee.png": "/iom-landingpage/static/media/coffee.35d0d947e642c35b87df.png",
     "static/media/Pretendard-Black.subset.woff": "/iom-landingpage/static/media/Pretendard-Black.subset.d87959822e5e862cba50.woff",
     "static/media/Pretendard-ExtraBold.subset.woff": "/iom-landingpage/static/media/Pretendard-ExtraBold.subset.18db997881f69f9eedea.woff",
     "static/media/Pretendard-Bold.subset.woff": "/iom-landingpage/static/media/Pretendard-Bold.subset.1c1244339e3f1de8db68.woff",
@@ -14,6 +15,7 @@
     "static/media/Pretendard-Regular.subset.woff": "/iom-landingpage/static/media/Pretendard-Regular.subset.955bceee0409b8095d96.woff",
     "static/media/Pretendard-ExtraLight.subset.woff": "/iom-landingpage/static/media/Pretendard-ExtraLight.subset.e6238fdf99e7a886933a.woff",
     "static/media/Pretendard-Thin.subset.woff": "/iom-landingpage/static/media/Pretendard-Thin.subset.91d35c56e106722f58ec.woff",
+    "static/media/logistics.png": "/iom-landingpage/static/media/logistics.ea9094d2a006e4ae7827.png",
     "static/media/Pretendard-Black.subset.woff2": "/iom-landingpage/static/media/Pretendard-Black.subset.caa29603c364423e73de.woff2",
     "static/media/Pretendard-ExtraBold.subset.woff2": "/iom-landingpage/static/media/Pretendard-ExtraBold.subset.ef8691b3175c491831c9.woff2",
     "static/media/Pretendard-Bold.subset.woff2": "/iom-landingpage/static/media/Pretendard-Bold.subset.a5ccc8f78b68ba6de99a.woff2",
@@ -23,13 +25,16 @@
     "static/media/Pretendard-Regular.subset.woff2": "/iom-landingpage/static/media/Pretendard-Regular.subset.e0a855e501f761b58aa8.woff2",
     "static/media/Pretendard-ExtraLight.subset.woff2": "/iom-landingpage/static/media/Pretendard-ExtraLight.subset.efbe2ffcea89d7a5bcf6.woff2",
     "static/media/Pretendard-Thin.subset.woff2": "/iom-landingpage/static/media/Pretendard-Thin.subset.24952e0aab525b73031b.woff2",
-    "static/media/peoples.png": "/iom-landingpage/static/media/peoples.71368ded18e9243e1297.png",
+    "static/media/accountant.png": "/iom-landingpage/static/media/accountant.d46b9f8118da93eb9118.png",
+    "static/media/hospital.png": "/iom-landingpage/static/media/hospital.32c56e1e44c2b17f077f.png",
+    "static/media/section2.png": "/iom-landingpage/static/media/section2.1b522680b41aa74509fb.png",
+    "static/media/chat_talk.png": "/iom-landingpage/static/media/chat_talk.c13b0e14ae6dc208bb57.png",
     "index.html": "/iom-landingpage/index.html",
     "main.2e313201.css.map": "/iom-landingpage/static/css/main.2e313201.css.map",
-    "main.737dbe33.js.map": "/iom-landingpage/static/js/main.737dbe33.js.map"
+    "main.4c4e6303.js.map": "/iom-landingpage/static/js/main.4c4e6303.js.map"
   },
   "entrypoints": [
     "static/css/main.2e313201.css",
-    "static/js/main.737dbe33.js"
+    "static/js/main.4c4e6303.js"
   ]
 }
