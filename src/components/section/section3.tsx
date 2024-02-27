@@ -1,6 +1,6 @@
 import { Box, VStack, Text, Image } from "@chakra-ui/react";
 import section3 from "../../images/section3.png";
-import CTAButton from "../CTAButton";
+import CTAButton from "../common/CTAButton";
 
 export default function Section3() {
     return (
@@ -19,7 +19,7 @@ export default function Section3() {
                     >
                         <strong>저희는 삼성전자 출신입니다</strong>
                     </h1>
-                    <Box>
+                    <Box opacity={0.8}>
                         <Text>
                             인터넷 공간이지만,<br></br> 의뢰를 맡기는 사람들이
                             어떤 사람들인지<br></br> 투명하게 보여드려야 된다는
@@ -32,7 +32,7 @@ export default function Section3() {
                         src={section3}
                     />
 
-                    <VStack alignItems={"flex-start"} pl={6}>
+                    <VStack alignItems={"flex-start"} pl={6} opacity={0.8}>
                         <Text mt={4}>
                             회사에서 일하는 동안 미친듯이<br></br>
                             고객 감동, 고객 만족을 위해 노력했습니다.

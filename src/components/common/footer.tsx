@@ -10,14 +10,14 @@ export default function Footer() {
                     <HStack
                         justify={"space-between"}
                         color={"#000000"}
-                        px={[10, 120]}
+                        px={[10, 100]}
                         py={10}
                         maxWidth={"1280px"}
                         margin={"auto"}
                     >
                         <VStack
                             alignItems={"flex-start"}
-                            fontSize={"12px"}
+                            fontSize={["12px", "16px"]}
                             letterSpacing={0}
                             fontWeight={500}
                         >
@@ -32,7 +32,7 @@ export default function Footer() {
                             <Text>
                                 상호명 : 인스테드오브미 | 대표 : 김유현<br></br>
                                 사업자등록번호 : 442-54-00852
-                                <br></br>이메일 : insteadofme.service@gmail.com
+                                <br></br>이메일 : insteadofme.yuhyeon@gmail.com
                                 <br></br>© InsteadOfMe. All Rights Reserved.
                             </Text>
                         </VStack>

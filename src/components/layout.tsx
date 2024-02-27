@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Header from "./header";
+import Header from "./common/header";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
-import Footer from "./footer";
+import Footer from "./common/footer";
 import { useRecoilValue } from "recoil";
 import { displayResolution } from "../utils";
-import HeaderWeb from "./header_Web";
+import HeaderWeb from "./common/header_Web";
 
 export default function Layout() {
     const resolution = useRecoilValue(displayResolution);

@@ -1,7 +1,7 @@
 import { Box, VStack, Text, Image, HStack, Center } from "@chakra-ui/react";
-import CTAButton from "../CTAButton";
+import CTAButton from "../common/CTAButton";
 import chatImage from "../../images/chat_talk.png";
-import CTAButtonWeb from "../CTAButton_Web";
+import CTAButtonWeb from "../common/CTAButton_Web";
 
 export default function Section1Web() {
     return (

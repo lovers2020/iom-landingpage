@@ -1,13 +1,11 @@
 import { VStack, Text, Image, Center, Box } from "@chakra-ui/react";
 import section3 from "../../images/section3.png";
-import CTAButtonWeb from "../CTAButton_Web";
+import CTAButtonWeb from "../common/CTAButton_Web";
 
 export default function Section3Web() {
     return (
         <>
-            <section
-                style={{ padding: "8rem 0 9rem 0", backgroundColor: "#FEFBF5" }}
-            >
+            <section style={{ padding: " 9rem 0", backgroundColor: "#FEFBF5" }}>
                 <Center gap={160}>
                     <VStack
                         color={"#0B213F"}
@@ -27,17 +25,17 @@ export default function Section3Web() {
                             <strong>저희는 삼성전자 출신입니다</strong>
                         </h1>
                         <Box opacity={0.8}>
-                            <Text>
+                            <Text mb={2}>
                                 인터넷 공간이지만,<br></br> 의뢰를 맡기는
                                 사람들이 어떤 사람들인지<br></br> 투명하게
                                 보여드려야 된다는 생각이 있습니다.
                             </Text>
 
-                            <Text>
+                            <Text mb={2}>
                                 회사에서 일하는 동안 미친듯이<br></br>
                                 고객 감동, 고객 만족을 위해 노력했습니다.
                             </Text>
-                            <Text>
+                            <Text mb={2}>
                                 그 결과 고객님들이 어떤 것을 원하시는 지 알게
                                 되었고
                                 <br></br>항상 고객님들의 입장에서 바라보게

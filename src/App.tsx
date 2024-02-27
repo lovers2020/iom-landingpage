@@ -6,6 +6,7 @@ import Home from "./home";
 import { Helmet } from "react-helmet";
 import { useSetRecoilState } from "recoil";
 import { displayResolution } from "./utils";
+import Portfolio from "./screen/portfolio";
 
 const router = createBrowserRouter(
     [
@@ -17,6 +18,10 @@ const router = createBrowserRouter(
                 {
                     path: "",
                     element: <Home />,
+                },
+                {
+                    path: "portfolio",
+                    element: <Portfolio />,
                 },
             ],
         },

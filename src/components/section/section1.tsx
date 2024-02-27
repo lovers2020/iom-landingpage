@@ -1,5 +1,5 @@
 import { Box, VStack, Text, Image } from "@chakra-ui/react";
-import CTAButton from "../CTAButton";
+import CTAButton from "../common/CTAButton";
 import chatImage from "../../images/chat_talk.png";
 
 export default function Section1() {

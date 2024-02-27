@@ -6,7 +6,7 @@ export default function Section2Web() {
         <>
             <section
                 style={{
-                    padding: "8rem 0 9rem 0",
+                    padding: "9rem 0",
                     backgroundColor: "#0B213F",
                 }}
             >
