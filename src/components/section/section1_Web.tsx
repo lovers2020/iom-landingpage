@@ -1,26 +1,28 @@
-import { Box, VStack, Text, Image } from "@chakra-ui/react";
+import { Box, VStack, Text, Image, HStack, Center } from "@chakra-ui/react";
 import CTAButton from "../common/CTAButton";
 import chatImage from "../../images/chat_talk.png";
+import CTAButtonWeb from "../common/CTAButton_Web";
 
-export default function Section1() {
+export default function Section1Web() {
     return (
         <>
             <section
                 style={{
-                    padding: "6rem 0 3rem 0",
+                    padding: "8rem 0 9rem 0",
                     backgroundColor: "#FFF7E4",
                 }}
             >
-                <VStack>
+                <Center gap={20}>
                     <Box
+                        mt={20}
                         color={"#000000D9"}
                         fontWeight={"500"}
-                        textAlign={"center"}
+                        textAlign={"start"}
                     >
                         <Text
                             letterSpacing={-1}
                             lineHeight={"1.3"}
-                            fontSize={"2.5rem"}
+                            fontSize={"4rem"}
                             fontWeight={"700"}
                         >
                             <strong>
@@ -33,41 +35,34 @@ export default function Section1() {
                             opacity={0.8}
                             fontWeight={"700"}
                             letterSpacing={-0.4}
-                            fontSize={"1rem"}
-                            my={4}
+                            fontSize={"1.5rem"}
+                            my={8}
                         >
                             웹사이트 맞춤 제작 저희와 함께 준비하세요.
                         </Text>
+                        <CTAButtonWeb />
                     </Box>
-                    <CTAButton />
                     <Box
                         position={"relative"}
                         letterSpacing={-0.1}
-                        fontSize={"12px"}
+                        fontSize={"18px"}
                         fontWeight={600}
                     >
                         <Text
                             color={"black"}
                             bgColor={"white"}
-                            display={"inline-block"}
                             px={4}
                             py={1.5}
                             borderRadius={7}
                             position={"absolute"}
                             left={10}
-                            top={14}
+                            top={20}
                         >
                             견적 문의드립니다~
                         </Text>
-                        <Image
-                            m={"10px auto"}
-                            w={"80%"}
-                            src={chatImage}
-                            alt="chat"
-                        />
+                        <Image src={chatImage} alt="chat" />
                         <Text
                             bgColor={"#3991F2"}
-                            display={"inline-block"}
                             px={4}
                             py={1.5}
                             borderRadius={7}
@@ -79,7 +74,7 @@ export default function Section1() {
                             네 고객님 어떤 홈페이지를<br></br> 원하시나요?
                         </Text>
                     </Box>
-                </VStack>
+                </Center>
             </section>
         </>
     );

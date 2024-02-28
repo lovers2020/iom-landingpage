@@ -1,27 +1,28 @@
-import { Box, VStack, Text, Image, Heading } from "@chakra-ui/react";
+import { Box, VStack, Text, Image, Center } from "@chakra-ui/react";
 import section2Img from "../../images/section2.png";
 
-export default function Section2() {
+export default function Section2Web() {
     return (
         <>
             <section
                 style={{
-                    padding: "5rem 0",
+                    padding: "9rem 0",
                     backgroundColor: "#0B213F",
                 }}
             >
-                <VStack position={"relative"}>
-                    <Box
+                <Center gap={40}>
+                    <Center
                         position={"relative"}
                         letterSpacing={-0.1}
                         fontSize={"12px"}
                     >
                         <Text
+                            fontSize={"1.2rem"}
                             color={"black"}
                             bgColor={"#6EC8FB"}
                             px={4}
                             py={1.5}
-                            borderRadius={7}
+                            borderRadius={10}
                             position={"absolute"}
                             left={6}
                             top={-6}
@@ -29,48 +30,50 @@ export default function Section2() {
                             현재 진행상황이 어떻게 될까요?
                         </Text>
                         <Text
+                            fontSize={"1.2rem"}
                             color={"black"}
                             bgColor={"#6EC8FB"}
                             px={4}
                             py={1.5}
-                            borderRadius={7}
+                            borderRadius={10}
                             position={"absolute"}
                             left={6}
-                            top={4}
+                            top={9}
                         >
                             일정 내에 가능하시겠죠?..
                         </Text>
-                        <Image
-                            m={"10px auto"}
-                            w={"70%"}
-                            src={section2Img}
-                            alt="chat"
-                        />
+                        <Image src={section2Img} alt="chat" />
                         <Text
+                            fontSize={"1.2rem"}
                             color={"black"}
                             bgColor={"#6EC8FB"}
                             px={4}
                             py={1.5}
-                            borderRadius={7}
+                            borderRadius={10}
                             position={"absolute"}
                             right={4}
                             bottom={4}
-                            textAlign={"center"}
                         >
                             빠른 답변 부탁드려요.{"😤"}
                         </Text>
-                    </Box>
+                    </Center>
 
-                    <VStack letterSpacing={-0.5} alignItems={"flex-start"}>
-                        <Heading color={"#ABDCFF"}>
+                    <VStack color={"#abdcff"} justify={"flex-start"}>
+                        <h1
+                            style={{
+                                letterSpacing: "-0.5",
+                                fontSize: "42px",
+                                fontWeight: "600",
+                            }}
+                        >
                             의사소통, 정말 중요합니다
-                        </Heading>
+                        </h1>
                         <Box
+                            w={"100%"}
                             opacity={0.7}
-                            color={"#a0afbd"}
-                            fontWeight={500}
-                            mt={4}
-                            alignItems={"flex-start"}
+                            mt={2}
+                            fontSize={"18px"}
+                            letterSpacing={0}
                         >
                             <Text>
                                 일부 책임감 없는 제작 업체들과 다르게<br></br>{" "}
@@ -89,7 +92,7 @@ export default function Section2() {
                             </Text>
                         </Box>
                     </VStack>
-                </VStack>
+                </Center>
             </section>
         </>
     );
