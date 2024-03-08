@@ -19,11 +19,6 @@ const urls = [
 ];
 const linkName = ["카페", "꽃집", "글램핑", "물류", "세무", "치과"];
 
-const PortfolioText = styled(motion.p)`
-    letter-spacing: -0.5px;
-    font-weight: 900;
-`;
-
 const textVariants = {
     start: { opacity: 0, y: 100 },
     end: {
@@ -48,25 +43,28 @@ export default function Portfolio() {
                 maxWidth={"1280px"}
                 margin={"auto"}
                 mt={20}
-                px={[10, 24]}
+                px={[14, 24]}
                 alignItems={"flex-start"}
                 color={"#0b213f"}
             >
                 <AnimatePresence>
                     <Box fontSize={["2rem", "3.5rem"]} py={[4, 10]}>
-                        <PortfolioText
+                        <Text
+                            as={motion.p}
+                            letterSpacing={-0.5}
+                            fontWeight={900}
                             variants={textVariants}
                             initial="start"
                             animate="end"
                             exit="exit"
                         >
                             PORTFOLIO
-                        </PortfolioText>
+                        </Text>
                     </Box>
                 </AnimatePresence>
                 <Grid
                     gridTemplateColumns={["repeat(2,1fr)", "repeat(3,1fr)"]}
-                    gap={[6, 10]}
+                    gap={[6, 12]}
                     pb={10}
                 >
                     {figList.map((current, index) => (
@@ -77,10 +75,16 @@ export default function Portfolio() {
                         >
                             <a href={`${urls[index]}/`} target="blank">
                                 <Image
+                                    boxShadow={
+                                        "4px 4px 4px 2px rgba(0,0,0,0.2)"
+                                    }
                                     _groupHover={{
-                                        transform: "translateY(-15px)",
-                                        transition: "all .3s",
+                                        transform:
+                                            "perspective(2000) rotateY(15deg)",
+                                        transformOrigin: "0 100% 0",
+                                        transition: ".3s",
                                     }}
+                                    transition={".3s"}
                                     w={["140px", "420px"]}
                                     h={["140px", "400px"]}
                                     src={current}

@@ -1,5 +1,4 @@
-import { Box, VStack, Text, Image, HStack, Center } from "@chakra-ui/react";
-import CTAButton from "../common/CTAButton";
+import { Box, Text, Image, Center } from "@chakra-ui/react";
 import chatImage from "../../images/chat_talk.png";
 import CTAButtonWeb from "../common/CTAButton_Web";
 
@@ -19,27 +18,29 @@ export default function Section1Web() {
                         fontWeight={"500"}
                         textAlign={"start"}
                     >
-                        <Text
-                            letterSpacing={-1}
-                            lineHeight={"1.3"}
-                            fontSize={"4rem"}
-                            fontWeight={"700"}
+                        <h1
+                            style={{
+                                letterSpacing: "-1px",
+                                lineHeight: "1.3",
+                                fontSize: "4rem",
+                                fontWeight: "700",
+                            }}
                         >
-                            <strong>
-                                웹사이트<br></br>다 만들어드립니다
-                            </strong>
-                        </Text>
+                            웹사이트<br></br>다 만들어드립니다
+                        </h1>
 
-                        <Text
-                            color={"rgba(0,0,0,0.6)"}
-                            opacity={0.8}
-                            fontWeight={"700"}
-                            letterSpacing={-0.4}
-                            fontSize={"1.5rem"}
-                            my={8}
+                        <h2
+                            style={{
+                                color: "rgba(0,0,0,0.6)",
+                                opacity: "0.8",
+                                fontWeight: "700",
+                                letterSpacing: "-0.4px",
+                                fontSize: "1.5rem",
+                                margin: "32 0",
+                            }}
                         >
                             웹사이트 맞춤 제작 저희와 함께 준비하세요.
-                        </Text>
+                        </h2>
                         <CTAButtonWeb />
                     </Box>
                     <Box
